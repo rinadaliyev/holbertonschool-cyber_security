@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-sudo last | tail -n 5
+sudo last -F | tail -n 5
