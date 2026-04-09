@@ -1,2 +1,2 @@
 #!/bin/bash
-awk '{print $1}' logs.txt | sort | uniq -c | sort -nr | head -n 1 | awk '{print $2}'
+cat logs.txt | cut -d' ' -f1 | grep '[.]' | sort | uniq -c | tail -1 | cut -d' ' -f5
